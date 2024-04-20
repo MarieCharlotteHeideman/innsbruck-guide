@@ -1,9 +1,15 @@
 body {
+  background-color: rgb(49, 120, 150);
 }
 
 .container {
+  background-color: white;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+a {
+  color: white;
 }
 
 header {
@@ -46,7 +52,40 @@ header a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 900px) {
+footer {
+  background-image: linear-gradient(
+      rgba(49, 120, 150, 0.8),
+      rgba(49, 120, 150, 0.8)
+    ),
+    url("/images/innsbruck-footer.jpg");
+  background-repeat: no repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+footer {
+  font-size: 20px;
+  padding: 50px 100px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 20px;
+}
+
+footer ul {
+  padding: 0;
+  opacity: 0.7;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer p {
+  opacity: 0.7;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 30px;
   }
