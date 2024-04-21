@@ -130,6 +130,15 @@ iframe {
   background-color: rgba(49, 120, 150, 0.1);
 }
 
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.photo {
+  object-fit: cover;
+}
+
 footer {
   background-image: linear-gradient(
       rgba(49, 120, 150, 0.8),
